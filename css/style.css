@@ -12,14 +12,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 .box .big {
-  width: 500px;
+  width: 400px;
   height: 300px;
   border: 1px solid black;
   transform: rotateY(180deg);
-  transition: 0.5s;
+  transition: 1s;
+  user-select: none;
 }
 .box .big img {
   display: none;
@@ -40,10 +42,11 @@ img {
 }
 
 .hidden {
-  width: 500px;
+  width: 400px;
   height: 300px;
   transform: rotateY(360deg);
-  transition: 0.5s;
+  transition: 1s;
+  user-select: none;
 }
 .hidden .back {
   display: none;
