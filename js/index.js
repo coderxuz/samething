@@ -1,28 +1,44 @@
 const box = document.querySelector(".box");
 const photos = [
   {
-    img: "./img/html.png",
+    img: "./img/frozen.jpg",
     id: 1,
   },
   {
-    img: "./img/js.png",
+    img: "./img/inside.jpg",
     id: 2,
   },
   {
-    img: "./img/html.png",
+    img: "./img/frozen.jpg",
     id: 1,
   },
   {
-    img: "./img/js.png",
+    img: "./img/inside.jpg",
     id: 2,
   },
   {
-    img: "./img/css.png",
+    img: "./img/maqquen.jpg",
     id: 3,
   },
   {
-    img: "./img/css.png",
+    img: "./img/big hero.jpg",
+    id: 4,
+  },
+  {
+    img: "./img/maqquen.jpg",
     id: 3,
+  },
+  {
+    img: "./img/big hero.jpg",
+    id: 4,
+  },
+  {
+    img: "./img/rapunsel.jpg",
+    id: 5,
+  },
+  {
+    img: "./img/rapunsel.jpg",
+    id: 5,
   }
 ];
 const shuffle = (array) => {
@@ -49,6 +65,7 @@ shuffledArray.map((item) => {
   big.setAttribute("data-opened", "false");
   
   big.classList = "big";
+  
   back.classList = "back";
   
   big.addEventListener("click", (e) => {
